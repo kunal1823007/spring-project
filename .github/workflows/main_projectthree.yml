@@ -19,7 +19,7 @@ jobs:
     - name: Set up Java version
       uses: actions/setup-java@v1
       with:
-        java-version: '8'
+        java-version: '11'
 
     - name: Build with Maven
       run: mvn clean install
@@ -49,5 +49,5 @@ jobs:
       with:
         app-name: 'projectthree'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_c6c4e3663d7346c5975c259811a25ec8 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_77fa401a9e354a48b174240c0d04baef }}
         package: '*.jar'
