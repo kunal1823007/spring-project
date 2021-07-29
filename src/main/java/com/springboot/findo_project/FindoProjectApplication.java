@@ -9,6 +9,4 @@ public class FindoProjectApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(FindoProjectApplication.class, args);
 	}
-	
-
 }
