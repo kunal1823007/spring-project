@@ -49,5 +49,5 @@ jobs:
       with:
         app-name: 'projectthree'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e094214d1c274c4eb025e0b3f05ddd18 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_2e8ea42fed4c4dabb74fa3dd3d6f4f33 }}
         package: '*.jar'
