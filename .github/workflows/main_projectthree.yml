@@ -1,6 +1,6 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
-
+# start commit
 name: Build and deploy JAR app to Azure Web App - projectthree
 
 on:
@@ -22,7 +22,8 @@ jobs:
         java-version: '11'
 
     - name: Build with Maven
-      run: mvn clean install
+      run: mvn package --file pom.xml
+      
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
@@ -49,5 +50,5 @@ jobs:
       with:
         app-name: 'projectthree'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_fffe5f398b9c44f68cdc4299b6a91aa3 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9e9f495546af4a8da2970cc6a41954a8 }}
         package: '*.jar'
